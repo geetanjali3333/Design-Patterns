@@ -27,6 +27,10 @@ public class Student {
         course=builder.course;
         gradYear=builder.gradYear;
     }
+   static StudentBuilder getBuilder(){
+        return new StudentBuilder();
+   }
+
 
     @Override
     public String toString() {
